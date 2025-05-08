@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SocketListenerPPDS1
+</name>
+</assembly>
+<members>
+<member name="T:SocketListenerPPDS1.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SocketListenerPPDS1.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SocketListenerPPDS1.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:SocketListenerPPDS1.GlobalVariables">
+ <summary>
+ SOCKET LISTENER 
+ Developed by : Avinash Desai (Technoforte -TKM IS)
+ Email id : TF_Avinashdesai@tkm.co.in
+ Date:30-September-2010
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:SocketListenerPPDS1.GlobalVariables.LogFilePath">
+ <summary>
+ The Path which is used to write the log files
+ </summary>
+ <remarks>Please make sure you add the back slash at the end of the path</remarks>
+ 
+</member>
+<member name="M:SocketListenerPPDS1.SocketListener.OnStart(System.String[])">
+ <summary>
+ Start of the Service which starts all the process
+ </summary>
+ <param name="args"></param>
+ <remarks></remarks>
+</member>
+<member name="M:SocketListenerPPDS1.SocketListener.OnContinue">
+ <summary>
+ Continuation of the service which will resume the service
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:SocketListenerPPDS1.SocketListener.OnStop">
+ <summary>
+ Stop the service and make unavailable 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:SocketListenerPPDS1.SocketListener.Start">
+ <summary>
+ Listen to Port and invoke the process data for splitting data
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:SocketListenerPPDS1.SocketListener.ProcessData">
+ <summary>
+ Socket data will be processed with the BC format and Inserted into Database.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:SocketListenerPPDS1.DataManager.SqlServerDataManager">
+ <summary>
+ SOCKET LISTENER 
+ Developed by : Avinash Desai (Technoforte -TKM IS)
+ Email id : TF_Avinashdesai@tkm.co.in
+ Date:30-September-2010
+ </summary>
+ <remarks></remarks>
+ 
+</member>
+<member name="M:SocketListenerPPDS1.DataManager.SqlServerDataManager.HasError(System.String)">
+ <summary>
+ Returns TRUE if the Input SQL raises any error when run against a database table.
+ </summary>
+ <param name="sql"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

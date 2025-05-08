@@ -1,0 +1,14 @@
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerJADS3.vbproj.GenerateResource.Cache
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\Mahesh Avanti\Code\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\Mahesh Avanti\Code\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\Mahesh Avanti\Code\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\Mahesh Avanti\Code\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb

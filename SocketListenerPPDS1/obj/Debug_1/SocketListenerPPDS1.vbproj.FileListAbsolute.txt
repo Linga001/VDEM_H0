@@ -1,0 +1,55 @@
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\ResolveAssemblyReference.cache
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\GenerateResource-ResGen.read.1.tlog
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\GenerateResource-ResGen.write.1.tlog
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\yasir\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\Project\Socket service\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+E:\Anupam\Working\CBS\04. Build & Unit Testing\CBS Socket Service(16Nov2016)\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+E:\Anupam\Working\CBS\04. Build & Unit Testing\CBS Socket Service(16Nov2016)\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+E:\Anupam\Working\CBS\04. Build & Unit Testing\CBS Socket Service(16Nov2016)\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+E:\Anupam\Working\CBS\04. Build & Unit Testing\CBS Socket Service(16Nov2016)\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+D:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.vbprojResolveAssemblyReference.cache
+E:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+E:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+E:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+E:\Anupam\Project\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\NewSVN\Local Application\Socket Application\PPDS\SocketListenerPPDS1\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\NewSVN\Local Application\Socket Application\PPDS\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\NewSVN\Local Application\Socket Application\PPDS\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\NewSVN\Local Application\Socket Application\PPDS\SocketListenerPPDS1\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+D:\D_Drive_20-jun-19\Local Projects\SocketListenerPPDS1(LEXUS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb

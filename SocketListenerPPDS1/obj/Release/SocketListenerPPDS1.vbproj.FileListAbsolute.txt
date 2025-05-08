@@ -1,0 +1,35 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe.config
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.pdb
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.xml
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.exe
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.xml
+C:\Users\Administrator\AppData\Local\Temporary Projects\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.pdb
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe.config
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.pdb
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.xml
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\ResolveAssemblyReference.cache
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.Resources.resources
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.ProjectInstaller.resources
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.exe
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.xml
+D:\Avinash\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.pdb
+\\192.168.243.222\Local Applications\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe.config
+\\192.168.243.222\Local Applications\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.exe
+\\192.168.243.222\Local Applications\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.xml
+\\192.168.243.222\Local Applications\SocketListenerService\SocketListenerPPDS1\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.pdb
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe.config
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.exe
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.pdb
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\bin\Release\SocketListenerPPDS1.xml
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.Resources.resources
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.ProjectInstaller.resources
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.vbproj.GenerateResource.Cache
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.exe
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.xml
+E:\Outlook Activity 17Dec2015\Mail Change Activity\CBS\Socket\SocketListenerPPDS1\obj\Release\SocketListenerPPDS1.pdb
