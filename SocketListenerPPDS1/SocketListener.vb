@@ -214,7 +214,6 @@ StartQuery:
     Dim strResponse As String
     Dim strData As String
     Dim intSerial As Integer
-    Dim VINMS As String
 
     'Avinash Desai
     'Below used to Justify the Date Length for File names
@@ -243,9 +242,6 @@ StartQuery:
     Public EmailSerialNo As String
     Public VehicleInfoID As Integer
     Public PlantID As Integer
-
-
-
 
 #End Region
 
@@ -389,18 +385,17 @@ RestartListening:
             ID_NO = strData.Substring(44, 10)
             SUFFIX = strData.Substring(54, 2)
             VIN_NO = strData.Substring(56, 17)
-            VINMS = strData.Substring(73, 4)
-            MODEL_CODE = strData.Substring(77, 15)
-            COLOR = strData.Substring(92, 3)
-            ASSY_LINE_OFF_SEQ_NO = strData.Substring(95, 3)
-            EG_NO = strData.Substring(98, 7)
-            KEY_NO = strData.Substring(105, 5)
-            BUY_OFF_ETD_with_TIME = strData.Substring(110, 12)
-            ASSY_LO_DATE = strData.Substring(136, 8)
-            ASSY_LO_TIME = strData.Substring(144, 4)
-            EG_PREFIX = strData.Substring(148, 5)
-            ETD_DELAY = strData.Substring(155, 7)
-            CNG_TANK_NUMBER = strData.Substring(162, 20)
+            MODEL_CODE = strData.Substring(73, 15)
+            COLOR = strData.Substring(88, 3)
+            ASSY_LINE_OFF_SEQ_NO = strData.Substring(91, 3)
+            EG_NO = strData.Substring(94, 7)
+            KEY_NO = strData.Substring(101, 5)
+            BUY_OFF_ETD_with_TIME = strData.Substring(106, 12)
+            ASSY_LO_DATE = strData.Substring(132, 8)
+            ASSY_LO_TIME = strData.Substring(140, 4)
+            EG_PREFIX = strData.Substring(144, 5)
+            ETD_DELAY = strData.Substring(151, 7)
+            CNG_TANK_NUMBER = strData.Substring(158, 20)
 
             DPlantCode = PLANT_CODE
             msgLen = Len(strData)
@@ -461,7 +456,7 @@ RestartListening:
         Dim DBBCSEQ As Integer = Nothing
 
         'Code Modified by: Mahesh Avanti on Date: 21-10-2019
-        If DPlantCode = "B1" Then
+        If DPlantCode = "B2" Then
 
 
             'Query = "Select Length from dbo.SocketMaster where MasterId=(Select MasterId From Socketdetail where TrackingPoint='" & DTrackingPoint & "' and line=" & DLine & " and PlantCode='" & DPlantCode & "')"
@@ -523,7 +518,7 @@ RestartListening:
                 If msgLen <> AppLength And (DDataProcessType = "00" Or DDataProcessType = "01" Or DDataProcessType = "10" Or (DDataProcessType = "0E" And DTrackingPoint <> "1H0")) Then
                     DProcessResult = "91"
 
-                ElseIf DLength <> (msgLen - 30) And (DDataProcessType = "00" Or DDataProcessType = "01" Or DDataProcessType = "10" Or (DDataProcessType = "0E" And DTrackingPoint <> "1H0")) Then
+                ElseIf DLength <> (msgLen - 26) And (DDataProcessType = "00" Or DDataProcessType = "01" Or DDataProcessType = "10" Or (DDataProcessType = "0E" And DTrackingPoint <> "1H0")) Then
 
                     DProcessResult = "76"
 
@@ -578,7 +573,7 @@ Response:
                     ''''''''''''''''INSERT STATEMENT''''''''''''''''''''''''''''
                     '***********************************************************
                     Try
-                        If DPlantCode = "B1" Then
+                        If DPlantCode = "B2" Then
                             'If DTrackingPoint = "1H6" Then
                             '    '''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
                             '    '''''''''''''''''''''''''''       1H6     '''''''''''''''''''''''''''''''''''
@@ -693,16 +688,16 @@ Response:
                                         BEGIN
                                         INSERT INTO TB_R_VEHICLE(
                                         BODY_NO,PLANT_CD,VEHICLE_ID,SUFFIX_CD,VIN,MODEL_CD,COLOR_CD,ASSEMBLY_SEQ_NO,KEY_NO,BUY_OFF_ETD_with_TIME,URN,KAKU_STATUS,DOK_STATUS,
-										ENG_NO,ENG_PREFIX,EXP_OR_DOM,FUEL_TYPE,DESTINATION,CREATED_BY,CREATED_DATE,ASSY_LO_DATE,ASSY_LO_TIME,ETD_DELAY,CNG_TANK_NUMBER,VINMS
+										ENG_NO,ENG_PREFIX,EXP_OR_DOM,FUEL_TYPE,DESTINATION,CREATED_BY,CREATED_DATE,ASSY_LO_DATE,ASSY_LO_TIME,ETD_DELAY,CNG_TANK_NUMBER
                                         ) 
                                         VALUES('" & BODY_NO & "','" & PLANT_CODE & "','" & ID_NO & "','" & SUFFIX & "','" & VIN_NO & "','" & MODEL_CODE & "','" & COLOR & "'," & ASSY_LINE_OFF_SEQ_NO & ",'" & KEY_NO & "','" & BUY_OFF_ETD_with_TIME & "','',0,0,
-										'" & EG_NO & "','" & EG_PREFIX & "','','','','N0_GALC',GETDATE(),'" & ASSY_LO_DATE & "','" & ASSY_LO_TIME & "','" & ETD_DELAY & "','" & CNG_TANK_NUMBER & "','" & VIN_NO + "-" + VINMS & "')
+										'" & EG_NO & "','" & EG_PREFIX & "','','','','N0_GALC',GETDATE(),'" & ASSY_LO_DATE & "','" & ASSY_LO_TIME & "','" & ETD_DELAY & "','" & CNG_TANK_NUMBER & "')
                                         END
                                         ELSE
                                         BEGIN
                                         UPDATE TB_R_VEHICLE SET BODY_NO = '" & BODY_NO & "',VEHICLE_ID = '" & ID_NO & "',SUFFIX_CD = '" & SUFFIX & "',MODEL_CD = '" & MODEL_CODE & "', 
 										COLOR_CD = '" & COLOR & "',ASSY_LO_DATE = '" & ASSY_LO_DATE & "',ASSY_LO_TIME = '" & ASSY_LO_TIME & "',ETD_DELAY = '" & ETD_DELAY & "',CNG_TANK_NUMBER = '" & CNG_TANK_NUMBER & "',
-										KEY_NO = '" & KEY_NO & "', ENG_NO = '" & EG_NO & "', ENG_PREFIX = '" & EG_PREFIX & "', VINMS ='" & VIN_NO + "-" + VINMS & "' WHERE VIN = '" & VIN_NO & "'
+										KEY_NO = '" & KEY_NO & "', ENG_NO = '" & EG_NO & "', ENG_PREFIX = '" & EG_PREFIX & "' WHERE VIN = '" & VIN_NO & "'
                                         END"
                                 SQLDM.ExecuteQuery(Query)
                             ElseIf DTrackingPoint = "R0" Then
@@ -712,8 +707,7 @@ Response:
                                 Query = "INSERT INTO TB_R0_VEHICLE 
                                         SELECT PK_ID,MODEL_CD,SUFFIX_CD,COLOR_CD,BODY_NO,VEHICLE_ID,VIN,EXP_OR_DOM,B_O_ETD,FUEL_TYPE,DESTINATION,URN,PLANT_CD,ASSEMBLY_SEQ_NO,KEY_NO,
                                         CREATED_BY,KAKU_STATUS,DOK_STATUS,CREATED_DATE,PAINT,ADM,TOE,S_T,DRUM,BRAKE,OPT1,OPT2,ENG_NO,ENG_PREFIX,ASSY_LO_DATE,ASSY_LO_TIME,
-                                        ETD_DELAY,CNG_TANK_NUMBER,BUY_OFF_ETD_with_TIME,UPDATE_BY,UPDATE_ON,GETDATE(),'R0_GALC',MANUAL_CD,VEHICLE_INFO_CODE,EXPORT_STATUS,EXPORT_UPDATE,
-                                        PK_ID_LOCATION,LOCATION_SCANNED_TIME,BAY_NO,VINMS FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';"
+                                        ETD_DELAY,CNG_TANK_NUMBER,BUY_OFF_ETD_with_TIME,UPDATE_BY,UPDATE_ON,GETDATE(),'R0_GALC',MANUAL_CD,VEHICLE_INFO_CODE,EXPORT_STATUS,EXPORT_UPDATE,PK_ID_LOCATION,LOCATION_SCANNED_TIME,BAY_NO,VINMS FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';"
                                 SQLList.Add(Query)
 
                                 Query = "INSERT INTO TB_R0_VEH_PR_SCAN_HIST 
@@ -815,7 +809,7 @@ Response:
 
 
             'This Else Condition is specially for B2 Plant Code and which has TP 5U3
-        ElseIf DPlantCode = "B1" And DTrackingPoint = "5U3" Then
+        ElseIf DPlantCode = "B2" And DTrackingPoint = "5U3" Then
 
 
             'Set the Process Type to ZERO. i.e., 

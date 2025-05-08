@@ -31,7 +31,7 @@
         '
         'SocketInstaller
         '
-        Me.SocketInstaller.Description = "Socket listener : Listens to the port number provided and  process the data to th" & _
+        Me.SocketInstaller.Description = "Socket listener : Listens to the port number provided and  process the data to th" &
     "e database of the application connected. "
         Me.SocketInstaller.ServiceName = "Socket Listener for VINMS #1"
         Me.SocketInstaller.ServicesDependedOn = New String() {""}

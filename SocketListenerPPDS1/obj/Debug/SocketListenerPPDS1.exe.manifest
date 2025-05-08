@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SocketListenerPPDS1.exe" size="50688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SocketListenerPPDS1.exe" size="50176">
       <assemblyIdentity name="SocketListenerPPDS1" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2iIvclELQe+7qFOoEZETYdoidy8=</dsig:DigestValue>
+        <dsig:DigestValue>wpmKRrGPopCDc+JU1NucRcPPaY0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="SocketListenerPPDS1.exe.config" size="4797">
+  <file name="SocketListenerPPDS1.exe.config" size="4621">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>u4GlLoPXGf01BXhzseBhbjUHXy8=</dsig:DigestValue>
+      <dsig:DigestValue>+aSbfWQhV2KttFcmahsxVA7x5mY=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

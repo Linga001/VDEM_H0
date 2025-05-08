@@ -21,13 +21,13 @@ Partial Class SocketListener
     <System.Diagnostics.DebuggerNonUserCode()> _
     Shared Sub Main()
         'While installing this service in Production Please uncomment below code: Mahesh Avanti
-        Dim ServicesToRun() As System.ServiceProcess.ServiceBase
-        ServicesToRun = New System.ServiceProcess.ServiceBase() {New SocketListener}
-        System.ServiceProcess.ServiceBase.Run(ServicesToRun)
+        'Dim ServicesToRun() As System.ServiceProcess.ServiceBase
+        'ServicesToRun = New System.ServiceProcess.ServiceBase() {New SocketListener}
+        'System.ServiceProcess.ServiceBase.Run(ServicesToRun)
 
         'Debug locally use belo code: Mahesh Avanti
-        'Dim obj As SocketListener = New SocketListener
-        'obj.OnStart(New String() {""})
+        Dim obj As SocketListener = New SocketListener
+        obj.OnStart(New String() {""})
 
 
     End Sub

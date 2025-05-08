@@ -1,0 +1,46 @@
+﻿Installing assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+Rolling back assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+An exception occurred during the Rollback phase of the System.ServiceProcess.ServiceProcessInstaller installer.
+System.NullReferenceException: Object reference not set to an instance of an object.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+Rolling back assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+Installing assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+Rolling back assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+An exception occurred during the Rollback phase of the System.ServiceProcess.ServiceProcessInstaller installer.
+System.NullReferenceException: Object reference not set to an instance of an object.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog
+Rolling back assembly 'E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+   logfile = E:\Jibin\SocketService\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.InstallLog

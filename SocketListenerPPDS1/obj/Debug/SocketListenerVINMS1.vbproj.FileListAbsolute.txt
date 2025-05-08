@@ -9,36 +9,19 @@ D:\VINMS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPD
 D:\VINMS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
 D:\VINMS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
 D:\VINMS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
-D:\VINMS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.SuggestedBindingRedirects.cache
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.manifest
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.application
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.AssemblyReference.cache
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.GenerateResource.cache
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.CoreCompileInputs.cache
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe.manifest
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.application
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
-D:\VINMS\SocketListenerPPDS1(VINMS)eXITS\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.manifest
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.application
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.AssemblyReference.cache
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.GenerateResource.cache
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.CoreCompileInputs.cache
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe.manifest
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.application
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
-D:\VDEM codes\VDEM_Team_Codes\Socket-Plant1\Based on Subbu San changes\SocketListenerPPDS1(VINMS)\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.config
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.AssemblyReference.cache
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.Resources.resources
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.ProjectInstaller.resources
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.GenerateResource.cache
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerVINMS1.vbproj.CoreCompileInputs.cache
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe.manifest
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.application
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.exe
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.xml
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\obj\Debug\SocketListenerPPDS1.pdb
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe.manifest
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.application
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.exe
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.pdb
+C:\Users\sivalingam.s\3D Objects\Socket-Plant 2\Vinay_sir_given_socket_code\VINMS\SocketListenerPPDS1\bin\Debug\SocketListenerPPDS1.xml
