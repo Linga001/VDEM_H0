@@ -24,6 +24,9 @@ Module GlobalVariables
     Public Bcseq As Integer
     Public SocketDetail As Integer
     Public PlantCode As String
+    Public PK_ID_PLANT As String
+    Public PK_ID_DIVISION As String
+    Public PK_ID_LINE As String
 
 
 

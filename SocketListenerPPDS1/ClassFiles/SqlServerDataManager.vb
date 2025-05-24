@@ -30,7 +30,7 @@ Namespace DataManager
 #Region "Constructor"
         ' Constructor
         Public Sub New()
-            m_ConnectionString = ConfigurationManager.ConnectionStrings("VINMS").ConnectionString
+            m_ConnectionString = ConfigurationManager.ConnectionStrings("H0").ConnectionString
 
             Try
                 m_Connection = New Data.SqlClient.SqlConnection(m_ConnectionString.ToString())

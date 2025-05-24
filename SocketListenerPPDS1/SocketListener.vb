@@ -26,8 +26,8 @@ Public Class SocketListener
     Protected Overrides Sub OnStart(ByVal args() As String)
         ' Add code here to start your service. This method should set things
         ' in motion so your service can do its work.
-        '=>Code Modifed by: Mahesh Avanti on Date:21-10-2019 PlantCode=B1-VINMS(New)/Earlier PlantCode=B3
-        PlantCode = "B1"
+        '=>Code Modifed by: Mahesh Avanti on Date:21-10-2019 PlantCode=B1-H0(New)/Earlier PlantCode=B3
+        PlantCode = "B2"
 
         Try
             LogFilePath = System.Configuration.ConfigurationManager.AppSettings("ApplicationLog").ToString()
@@ -41,10 +41,10 @@ Public Class SocketListener
 
 StartQuery:
         Try
-            PortNumber = SQLDM.GetValue("Select Port from tblSocketSetting where Id=1")
+            PortNumber = SQLDM.GetValue("Select Port from tblSocketSetting_H0 where Id=1")
             WriteToLog("Port Number For Service is : " & PortNumber)
         Catch ex As Exception
-            WriteToLog("Error While getting Portnumber For Plant#1-VINMS" & ex.Message)
+            WriteToLog("Error While getting Portnumber For Plant#2-H0" & ex.Message)
             GoTo StartQuery
         End Try
 
@@ -365,6 +365,8 @@ RestartListening:
 
 
         Dim Query As String = Nothing
+        Dim Query_QUEUE As String = Nothing
+        Dim PK_ID_VEHICLE As Int32 = 0
         'Debugger.Break()
         Try
 
@@ -462,10 +464,8 @@ RestartListening:
             'Query = "Select Length from dbo.SocketMaster where MasterId=(Select MasterId From Socketdetail where TrackingPoint='" & DTrackingPoint & "' and line=" & DLine & " and PlantCode='" & DPlantCode & "')"
 
             Try
-                If DTrackingPoint = "N0" Then
-                    Query = "Select Length from dbo.tblSocketSetting where Id=1"
-                ElseIf DTrackingPoint = "R0" Then
-                    Query = "Select Length from dbo.tblSocketSetting where Id=2"
+                If DTrackingPoint = "H0" Then
+                    Query = "Select Length from dbo.tblSocketSetting_H0 where Id=1"
                 End If
 
             Catch ex As Exception
@@ -483,10 +483,8 @@ RestartListening:
 
             Try
                 'LPort = SQLDM.GetValue("Select Portnumber from SocketMaster where MasterId=(Select MasterId from dbo.SocketDetail  where TrackingPoint='" & DTrackingPoint & "' and line=" & DLine & ")")
-                If DTrackingPoint = "N0" Then
-                    LPort = SQLDM.GetValue("Select Port from tblSocketSetting where Id=1")
-                ElseIf DTrackingPoint = "R0" Then
-                    LPort = SQLDM.GetValue("Select Port from tblSocketSetting where Id=2")
+                If DTrackingPoint = "H0" Then
+                    LPort = SQLDM.GetValue("Select Port from tblSocketSetting_H0 where Id=1")
                 End If
 
             Catch ex As Exception
@@ -495,10 +493,8 @@ RestartListening:
 
 
             'Query = "Select BcSequence from dbo.SocketDetail  where TrackingPoint='" & DTrackingPoint & "' and line=" & DLine & " and MasterId=(Select MasterId from dbo.SocketMaster  where PortNumber='" & LPort & "' and PlantCode='" & DPlantCode & "')"
-            If DTrackingPoint = "N0" Then
-                Query = "Select BcSequence from dbo.tblSocketSetting  where Id=1"
-            ElseIf DTrackingPoint = "R0" Then
-                Query = "Select BcSequence from dbo.tblSocketSetting  where Id=2"
+            If DTrackingPoint = "H0" Then
+                Query = "Select BcSequence from dbo.tblSocketSetting_H0  where Id=1"
             End If
 
             Try
@@ -532,10 +528,8 @@ RestartListening:
                     Else
                         DProcessResult = "90"
                         WriteFormattedData("BcSequenceError : Expected Seq: " & DBBCSEQ & ". Updating it to " & DBCSequenceNo, "", PlantCode)
-                        If DTrackingPoint = "N0" Then
-                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting]  SET [BcSequence] = " & DBCSequenceNo - 1 & " WHERE Id=1")
-                        ElseIf DTrackingPoint = "R0" Then
-                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting]  SET [BcSequence] = " & DBCSequenceNo - 1 & " WHERE Id=2")
+                        If DTrackingPoint = "H0" Then
+                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting_H0]  SET [BcSequence] = " & DBCSequenceNo - 1 & " WHERE Id=1")
                         End If
                         DBBCSEQ = DBCSequenceNo - 1
                         DProcessResult = "00"
@@ -681,17 +675,20 @@ Response:
                             'MyParams(10) = New SqlParameter("@PARAM_BCSEQUENCENO", DBCSequenceNo)
 
                             'SQLDM.ExecuteStoredProcedure("VINInsertIntoVehicleInfo", MyParams) '=>Code Modifed by: Mahesh Avanti on Date:31-08-2019
+                            PK_ID_PLANT = System.Configuration.ConfigurationManager.AppSettings("PK_ID_PLANT").ToString()
+                            PK_ID_DIVISION = System.Configuration.ConfigurationManager.AppSettings("PK_ID_DIVISION").ToString()
+                            PK_ID_LINE = System.Configuration.ConfigurationManager.AppSettings("PK_ID_LINE").ToString()
 
-                            If DTrackingPoint = "N0" Then
+                            If DTrackingPoint = "H0" Then
 
                                 Query = "IF NOT EXISTS(SELECT 1 FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "')
                                         BEGIN
                                         INSERT INTO TB_R_VEHICLE(
                                         BODY_NO,PLANT_CD,VEHICLE_ID,SUFFIX_CD,VIN,MODEL_CD,COLOR_CD,ASSEMBLY_SEQ_NO,KEY_NO,BUY_OFF_ETD_with_TIME,URN,KAKU_STATUS,DOK_STATUS,
-										ENG_NO,ENG_PREFIX,EXP_OR_DOM,FUEL_TYPE,DESTINATION,CREATED_BY,CREATED_DATE,ASSY_LO_DATE,ASSY_LO_TIME,ETD_DELAY,CNG_TANK_NUMBER
+										ENG_NO,ENG_PREFIX,EXP_OR_DOM,FUEL_TYPE,DESTINATION,CREATED_BY,CREATED_DATE,ASSY_LO_DATE,ASSY_LO_TIME,ETD_DELAY,CNG_TANK_NUMBER,IS_VEHICLE_IN_QI,H0_CREATED_BY,H0_CREATED_DATE,IS_VEHICLE_IN_ASSY
                                         ) 
                                         VALUES('" & BODY_NO & "','" & PLANT_CODE & "','" & ID_NO & "','" & SUFFIX & "','" & VIN_NO & "','" & MODEL_CODE & "','" & COLOR & "'," & ASSY_LINE_OFF_SEQ_NO & ",'" & KEY_NO & "','" & BUY_OFF_ETD_with_TIME & "','',0,0,
-										'" & EG_NO & "','" & EG_PREFIX & "','','','','N0_GALC',GETDATE(),'" & ASSY_LO_DATE & "','" & ASSY_LO_TIME & "','" & ETD_DELAY & "','" & CNG_TANK_NUMBER & "')
+										'" & EG_NO & "','" & EG_PREFIX & "','','','','','','" & ASSY_LO_DATE & "','" & ASSY_LO_TIME & "','" & ETD_DELAY & "','" & CNG_TANK_NUMBER & "',0,'H0_GALC',GETDATE(),1)
                                         END
                                         ELSE
                                         BEGIN
@@ -700,84 +697,25 @@ Response:
 										KEY_NO = '" & KEY_NO & "', ENG_NO = '" & EG_NO & "', ENG_PREFIX = '" & EG_PREFIX & "' WHERE VIN = '" & VIN_NO & "'
                                         END"
                                 SQLDM.ExecuteQuery(Query)
-                            ElseIf DTrackingPoint = "R0" Then
-                                Dim SQLList As List(Of String)
-                                SQLList = New List(Of String)
+                                Try
+                                    Dim querySelect As String = "SELECT PK_ID FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "'"
+                                    Dim result = SQLDM.GetValue(querySelect)
+                                    PK_ID_VEHICLE = result
 
-                                Query = "INSERT INTO TB_R0_VEHICLE 
-                                        SELECT PK_ID,MODEL_CD,SUFFIX_CD,COLOR_CD,BODY_NO,VEHICLE_ID,VIN,EXP_OR_DOM,B_O_ETD,FUEL_TYPE,DESTINATION,URN,PLANT_CD,ASSEMBLY_SEQ_NO,KEY_NO,
-                                        CREATED_BY,KAKU_STATUS,DOK_STATUS,CREATED_DATE,PAINT,ADM,TOE,S_T,DRUM,BRAKE,OPT1,OPT2,ENG_NO,ENG_PREFIX,ASSY_LO_DATE,ASSY_LO_TIME,
-                                        ETD_DELAY,CNG_TANK_NUMBER,BUY_OFF_ETD_with_TIME,UPDATE_BY,UPDATE_ON,GETDATE(),'R0_GALC',MANUAL_CD,VEHICLE_INFO_CODE,EXPORT_STATUS,EXPORT_UPDATE,PK_ID_LOCATION,LOCATION_SCANNED_TIME,BAY_NO,VINMS FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
+                                    Query = "INSERT INTO TB_R_VEHICLE_QUEUE(PK_ID_PLANT,PK_ID_DIVISION,PK_ID_LINE,PK_ID_VEHICLE,PK_ID_SUBASSY,SCANNED_DATE,UPDATE_DATE,IS_HANEDASHI,IS_ACTIVE,REMARKS) " &
+                                            "VALUES( " & PK_ID_PLANT & ", " & PK_ID_DIVISION & ", " & PK_ID_LINE & "," & PK_ID_VEHICLE & ",0,GETDATE(),GETDATE(),0,1,'NULL')"
 
-                                Query = "INSERT INTO TB_R0_VEH_PR_SCAN_HIST 
-                                        SELECT SH.* FROM TB_R_VEH_PR_SCAN_HIST SH JOIN TB_R_VEHICLE RV ON RV.PK_ID = SH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
+                                    SQLDM.ExecuteQuery(Query)
 
-                                Query = "INSERT INTO TB_R0_VEH_ENTRY_COUNT 
-                                        SELECT VEC.* FROM TB_R_VEH_ENTRY_COUNT VEC JOIN TB_R_VEHICLE RV ON RV.PK_ID = VEC.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
+                                Catch ex As Exception
+                                    MsgBox("Error occurred: " & ex.Message, MsgBoxStyle.Critical)
+                                End Try
 
-                                Query = "INSERT INTO TB_R0_VEH_DEFECT_H 
-                                        SELECT VDH.* FROM TB_R_VEH_DEFECT_H VDH JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "INSERT INTO TB_R0_VEH_DEFECT_D  
-                                        SELECT VDD.* FROM TB_R_VEH_DEFECT_D VDD JOIN TB_R_VEH_DEFECT_H VDH ON VDH.PK_ID = VDD.PK_ID_VEH_DEFECT 
-                                        JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "DELETE VDD FROM TB_R_VEH_DEFECT_D VDD JOIN TB_R_VEH_DEFECT_H VDH ON VDH.PK_ID = VDD.PK_ID_VEH_DEFECT JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE 
-                                        WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "DELETE VDH FROM TB_R_VEH_DEFECT_H VDH JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "DELETE VEC FROM TB_R_VEH_ENTRY_COUNT VEC JOIN TB_R_VEHICLE RV ON RV.PK_ID = VEC.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "DELETE SH FROM TB_R_VEH_PR_SCAN_HIST SH JOIN TB_R_VEHICLE RV ON RV.PK_ID = SH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                Query = "DELETE FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';"
-                                SQLList.Add(Query)
-
-                                'Query = "
-                                '        INSERT INTO TB_R0_VEHICLE 
-                                '        SELECT PK_ID,MODEL_CD,SUFFIX_CD,COLOR_CD,BODY_NO,VEHICLE_ID,VIN,EXP_OR_DOM,B_O_ETD,FUEL_TYPE,DESTINATION,URN,PLANT_CD,ASSEMBLY_SEQ_NO,KEY_NO,
-                                '        CREATED_BY,KAKU_STATUS,DOK_STATUS,CREATED_DATE,PAINT,ADM,TOE,S_T,DRUM,BRAKE,OPT1,OPT2,ENG_NO,ENG_PREFIX,ASSY_LO_DATE,ASSY_LO_TIME,
-                                '        ETD_DELAY,CNG_TANK_NUMBER,BUY_OFF_ETD_with_TIME,UPDATE_BY,UPDATE_ON,GETDATE(),'R0_GALC' FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';
-
-                                '        INSERT INTO TB_R0_VEH_PR_SCAN_HIST 
-                                '        SELECT SH.* FROM TB_R_VEH_PR_SCAN_HIST SH JOIN TB_R_VEHICLE RV ON RV.PK_ID = SH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        INSERT INTO TB_R0_VEH_ENTRY_COUNT 
-                                '        SELECT VEC.* FROM TB_R_VEH_ENTRY_COUNT VEC JOIN TB_R_VEHICLE RV ON RV.PK_ID = VEC.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        INSERT INTO TB_R0_VEH_DEFECT_H 
-                                '        SELECT VDH.* FROM TB_R_VEH_DEFECT_H VDH JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        INSERT INTO TB_R0_VEH_DEFECT_D  
-                                '        SELECT VDD.* FROM TB_R_VEH_DEFECT_D VDD JOIN TB_R_VEH_DEFECT_H VDH ON VDH.PK_ID = VDD.PK_ID_VEH_DEFECT 
-                                '        JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        DELETE VDD FROM TB_R_VEH_DEFECT_D VDD JOIN TB_R_VEH_DEFECT_H VDH ON VDH.PK_ID = VDD.PK_ID_VEH_DEFECT JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE 
-                                '        WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        DELETE VDH FROM TB_R_VEH_DEFECT_H VDH JOIN TB_R_VEHICLE RV ON RV.PK_ID = VDH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        DELETE VEC FROM TB_R_VEH_ENTRY_COUNT VEC JOIN TB_R_VEHICLE RV ON RV.PK_ID = VEC.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        DELETE SH FROM TB_R_VEH_PR_SCAN_HIST SH JOIN TB_R_VEHICLE RV ON RV.PK_ID = SH.PK_ID_VEHICLE WHERE RV.VIN = '" & VIN_NO & "';
-
-                                '        DELETE FROM TB_R_VEHICLE WHERE VIN = '" & VIN_NO & "';"
-                                SQLDM.ExecuteQuery(SQLList)
                             End If
                         End If
                     Catch ex As Exception
                         WriteToLog("ERROR While inserting the data  - " & ex.Message & "  " & vbNewLine & " STORED PROCEDURE ERROR FOR DATA - " & strData & " " & vbNewLine)
-                        WriteToLog("Input Data for Insert/Update Body Details For VINMS-Plant#1 are PlantCode =" & DPlantCode.Trim() & " , PlantID = " & PlantID & " , BodyNo = " & DBodyNo.Trim() & " BCSequenceNo = " & DBCSequenceNo & " , VehicleInfoID = " & VehicleInfoID)
+                        WriteToLog("Input Data for Insert/Update Body Details For H0-Plant#2 are PlantCode =" & DPlantCode.Trim() & " , PlantID = " & PlantID & " , BodyNo = " & DBodyNo.Trim() & " BCSequenceNo = " & DBCSequenceNo & " , VehicleInfoID = " & VehicleInfoID)
                     End Try
                 End If
 
@@ -794,10 +732,8 @@ Response:
 
                     Try
                         'SQLDM.ExecuteQuery("UPDATE [SocketDetail]  SET [BcSequence] = " & NewBc & " WHERE [TrackingPoint] ='" & DTrackingPoint & "' and MasterId=(Select MasterId from dbo.SocketMaster  where PortNumber='" & LPort & "' and PlantCode='" & DPlantCode & "')")
-                        If DTrackingPoint = "N0" Then
-                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting]  SET [BcSequence] = " & NewBc & " WHERE Id=1")
-                        ElseIf DTrackingPoint = "R0" Then
-                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting]  SET [BcSequence] = " & NewBc & " WHERE Id=2")
+                        If DTrackingPoint = "H0" Then
+                            SQLDM.ExecuteQuery("UPDATE [tblSocketSetting_H0]  SET [BcSequence] = " & NewBc & " WHERE Id=1")
                         End If
 
                     Catch ex As Exception
@@ -898,7 +834,7 @@ Response:
 
         Request = " Request :" & Request & "  Response :" & Len(formattedData)
 
-        Dim Value As String = "VINMS_" & DPlantcode & "_" & Now.Day & "-" & Now.Month & "-" & Now.Year
+        Dim Value As String = "H0_" & DPlantcode & "_" & Now.Day & "-" & Now.Month & "-" & Now.Year
 
         DataLogFileName = DataLogPath & "DataLog_" & Value & ".txt"
 
